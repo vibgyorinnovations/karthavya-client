@@ -1,0 +1,202 @@
+.NavBar {
+    height: auto;
+    width: 100%;
+    background: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavBar .NavBar-Desktop {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo navlinks profile logout";
+}
+
+.NavBar .NavBar-Desktop .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.NavBar .NavBar-Desktop .logo img{
+    height: 60px;
+}
+
+.NavBar .NavBar-Desktop ul {
+    grid-area: navlinks;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.NavBar .NavBar-Desktop ul .link {
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar .NavBar-Desktop .profile {
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.NavBar .NavBar-Desktop .profile .name {
+    color: white;
+}
+
+.NavBar .NavBar-Desktop .logout {
+    grid-area: logout;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.NavBar .NavBar-Desktop .logout a {
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar .NavBar-Mobile {
+    display: none;
+}
+
+@media all and (max-width: 1200px) {
+    .NavBar .NavBar-Desktop .logo img{
+        height: 55px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .NavBar .NavBar-Desktop .logo img{
+        height: 50px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .NavBar .NavBar-Desktop {
+        display: none;
+    }
+
+    .NavBar .NavBar-Mobile {
+        transition: all 0.3s;
+        border-bottom: 1px solid white;
+
+    }
+
+    .NavBar .NavBar-Mobile.active {
+        height: 280px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 80px 100px 50px 50px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: ". logo hamburger" "navlinks navlinks navlinks" "profile profile profile" "logout logout logout";
+    }
+
+    .NavBar .NavBar-Desktop .inactive {
+        display: none;
+    }
+
+    .NavBar .NavBar-Mobile.inactive {
+        height: 80px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: ". logo hamburger";
+    }
+
+    .NavBar .NavBar-Mobile .logo {
+        grid-area: logo;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .NavBar .NavBar-Mobile .logo img{
+        height: 55px;
+    }
+
+    .NavBar .NavBar-Mobile .hamburger {
+        grid-area: hamburger;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    .NavBar .NavBar-Mobile ul.inactive{
+        display: none;
+    }
+
+    .NavBar .NavBar-Mobile ul.active {
+        grid-area: navlinks;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .NavBar .NavBar-Mobile ul .link {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .NavBar .NavBar-Mobile .profile.inactive{
+        display: none;
+    }
+
+    .NavBar .NavBar-Mobile .profile.active {
+        grid-area: profile;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .NavBar .NavBar-Mobile .profile .name {
+        color: white;
+    }
+
+    .NavBar .NavBar-Mobile .logout.inactive{
+        display: none;
+    }
+
+    .NavBar .NavBar-Mobile .logout.active {
+        grid-area: logout;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .NavBar .NavBar-Mobile .logout a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+}
+
+@media all and (max-width: 576px) {
+}
+
+@media all and (max-width: 424px) {
+}
+
+@media all and (max-width: 320px) {
+}

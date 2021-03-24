@@ -1,0 +1,57 @@
+.DashboardDemo .Badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.DashboardDemo .Badge .text {
+    margin-top: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: transparent;
+}
+
+.DashboardDemo .Badge .svg {
+    height: 100px;
+    width: 100px;
+    background: transparent;
+}
+
+.DashboardDemo .Badge .svg svg {
+    height: 100px;
+    width: 100px;
+}
+
+.DashboardDemo .Badge .display {
+    height: 35px;
+    width: 150px;
+    margin-top: 5px;
+    background: #272727;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*@media all and (max-width: 1200px) {*/
+/*}*/
+
+/*@media all and (max-width: 992px) {*/
+/*}*/
+
+/*@media all and (max-width: 768px) {*/
+/*}*/
+
+/*@media all and (max-width: 576px) {*/
+/*}*/
+
+/*@media all and (max-width: 424px) {*/
+/*}*/
+
+/*@media all and (max-width: 320px) {*/
+/*}*/

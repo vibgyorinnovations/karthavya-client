@@ -1,0 +1,76 @@
+.Login{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "greet-text" "login-form";
+    min-height: 700px;
+}
+
+.Login .greet-text{
+    grid-area: greet-text;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+
+.Login .login-form{
+    grid-area: login-form;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login .login-form form{
+    height: 350px;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Login .login-form form .title{
+    font-size: 2.5em;
+}
+
+.Login .login-form form input{
+    height: 50px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.Login .login-form form .email,
+.Login .login-form form .password{
+    border: 2px solid #DC3545;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #4C5364;
+}
+
+.Login .login-form form .login-button{
+    width: 50%;
+    font-size: 1.2em;
+    color: white;
+    background: #007bff;
+}
+
+.Login .login-form form text{
+    font-size: 1.3em;
+}
+
+.Login .login-form form text a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(26, 144, 254);
+}

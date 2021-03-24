@@ -1,0 +1,106 @@
+.mobile-field {
+    height: 60px;
+    width: 100%;
+}
+
+.mobile-field .PhoneInput {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #a8abae;
+    border-radius: 5px;
+}
+
+.mobile-field .PhoneInput .PhoneInputCountry {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-field .PhoneInput .PhoneInputCountry .PhoneInputCountryIcon {
+    height: 100%;
+    width: 50px;
+    box-shadow: none;
+    background: white;
+}
+
+.mobile-field .PhoneInput .PhoneInputInput {
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 1.6em;
+    color: #a8abae;
+}
+
+.mobile-field text {
+    z-index: 2;
+    position: relative;
+    top: -70px;
+    margin-left: 10px;
+    background: white;
+    color: #a8abae;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+@media all and (max-width: 1200px) {
+    .mobile-field .PhoneInput .PhoneInputInput {
+        font-size: 1.5em;
+    }
+
+    .mobile-field text {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .mobile-field .PhoneInput .PhoneInputInput {
+    }
+
+    .mobile-field text {
+    }
+}
+
+@media all and (max-width: 768px) {
+    .mobile-field .PhoneInput .PhoneInputInput {
+        font-size: 1.4em;
+    }
+
+    .mobile-field text {
+        font-size: 1.05em;
+        top: -69px;}
+}
+
+@media all and (max-width: 576px) {
+    .mobile-field .PhoneInput .PhoneInputInput {
+        font-size: 1.35em;
+    }
+
+    .mobile-field text {
+        font-size: 1.025em;
+    }
+}
+
+@media all and (max-width: 424px) {
+    .mobile-field .PhoneInput .PhoneInputInput {
+        font-size: 1.2em;
+    }
+
+    .mobile-field text {
+        font-size: 0.9em;
+        top: -66px;}
+}
+
+@media all and (max-width: 320px) {
+    .mobile-field .PhoneInput .PhoneInputInput {
+        font-size: 1.1em;
+    }
+
+    .mobile-field text {
+        font-size: 0.8em;
+    }
+}

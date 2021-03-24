@@ -1,0 +1,95 @@
+.DashboardHome {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto 11.25% 11.25% 11.25% 11.25% 11.25% 11.25%;
+    grid-template-areas: "calendar badge-1 badge-1 badge-2 badge-2 badge-3 badge-3" "calendar badge-4 badge-4 badge-5 badge-5 badge-6 badge-6" "calendar . badge-7 badge-7 download download .";
+}
+
+.DashboardHome .calendar-parent {
+    grid-area: calendar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #272727;
+}
+
+.DashboardHome .download {
+    grid-area: download;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.DashboardHome .download .text {
+    margin-top: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: transparent;
+}
+
+.DashboardHome .download .svg {
+    height: 100px;
+    width: 100px;
+    background: transparent;
+}
+
+.DashboardHome .download .svg svg {
+    height: 100px;
+    width: 100px;
+}
+
+@media all and (max-width: 1200px) {
+    .DashboardHome {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100% 50% 50% 50%;
+        grid-template-areas: "calendar calendar calendar" "badge-1 badge-2 badge-3" "badge-4 badge-5 badge-6" "badge-7 download .";
+    }
+}
+
+@media all and (max-width: 992px) {
+    .DashboardHome {
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 100% 50% 50% 50% 50%;
+        grid-template-areas: "calendar calendar" "badge-1 badge-2" "badge-3 badge-4" "badge-5 badge-6" "badge-7 download";
+    }
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 576px) {
+    .DashboardHome {
+        grid-template-columns: 100% ;
+        grid-template-rows: 100% 50% 50% 50% 50% 50% 50% 50% 50%;
+        grid-template-areas: "calendar" "badge-1" "badge-2" "badge-3" "badge-4" "badge-5" "badge-6" "badge-7" "download";
+    }
+}
+
+@media all and (max-width: 424px) {
+}
+
+@media all and (max-width: 320px) {
+}
+
+/*@media all and (max-width: 1200px) {*/
+/*}*/
+
+/*@media all and (max-width: 992px) {*/
+/*}*/
+
+/*@media all and (max-width: 768px) {*/
+/*}*/
+
+/*@media all and (max-width: 576px) {*/
+/*}*/
+
+/*@media all and (max-width: 424px) {*/
+/*}*/
+
+/*@media all and (max-width: 320px) {*/
+/*}*/

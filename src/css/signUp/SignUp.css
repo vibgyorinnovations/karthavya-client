@@ -1,0 +1,344 @@
+.SignUp {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: ". . top-block" "title title desktopLogo" "script script  desktopLogo" "fullName organizationName desktopImage" "emailAddress mobileNumber desktopImage" "password password desktopImage" "button button loginText" ". . bottom-block";
+}
+
+.SignUp .top-block {
+    grid-area: top-block;
+    background: rgb(26, 144, 254);
+    border-top-left-radius: 10px;
+}
+
+.SignUp .bottom-block {
+    grid-area: bottom-block;
+    background: rgb(26, 144, 254);
+    border-bottom-left-radius: 10px;
+}
+
+.SignUp .title {
+    grid-area: title;
+    font-size: 3.5em;
+    font-weight: 600;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 70px;
+}
+
+.SignUp .script {
+    grid-area: script;
+    font-size: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 30px;
+    color: rgb(168, 171, 174);
+}
+
+.SignUp .FullName {
+    grid-area: fullName;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.SignUp .OrganizationName {
+    grid-area: organizationName;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.SignUp .EmailAddress {
+    grid-area: emailAddress;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.SignUp .MobileNumber {
+    grid-area: mobileNumber;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.SignUp .Password {
+    grid-area: password;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.SignUp .button {
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.SignUp .button button {
+    height: 60%;
+    width: 30%;
+    background: #1990fe;
+    font-size: large;
+    font-weight: bold;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.SignUp .button button:hover {
+    background: #0084ff;
+}
+
+
+.SignUp .desktop-logo {
+    grid-area: desktopLogo;
+    background: rgb(26, 144, 254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUp .desktop-logo img {
+    height: 100px;
+}
+
+.SignUp .desktop-image {
+    grid-area: desktopImage;
+    background: rgb(26, 144, 254);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.SignUp .desktop-image img {
+    height: 500px;
+}
+
+.SignUp .login-text {
+    grid-area: loginText;
+    background: rgb(26, 144, 254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+.SignUp .login-text a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.SignUp .mobile-logo {
+    grid-area: mobileLogo;
+    display: none;
+}
+
+@media all and (max-width: 1200px) {
+    .SignUp {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1.5fr  1fr  1fr 1fr 1fr 1fr 1fr 1.5fr;
+        grid-template-areas: "mobileLogo mobileLogo"
+    "title title"
+    "script script"
+    "fullName organizationName"
+    "emailAddress mobileNumber"
+    "password password"
+    "button button"
+    "loginText loginText";
+    }
+
+    .SignUp .mobile-logo svg {
+        height: 90px;
+    }
+
+    .SignUp .desktop-logo {
+        display: none;
+    }
+
+    .SignUp .desktop-image {
+        display: none;
+    }
+
+    .SignUp .top-block {
+        display: none;
+    }
+
+    .SignUp .bottom-block {
+        display: none;
+    }
+
+    .SignUp .mobile-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SignUp .title {
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+        font-size: 4.5em;
+    }
+
+    .SignUp .script{
+        font-size: 1.6em;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .SignUp .login-text{
+        background: white;
+    }
+
+    .SignUp .login-text a{
+        color: rgb(26, 144, 254);
+    }
+
+    .SignUp .button{
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .SignUp {
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 100px 80px 100px 100px 100px 100px 100px 100px 100px;
+        grid-template-areas: "mobileLogo"
+    "title"
+    "script"
+    "fullName"
+    "organizationName"
+    "emailAddress"
+    "mobileNumber"
+    "password"
+    "button"
+    "loginText";
+    }
+
+    .SignUp .mobile-logo{
+        align-items: flex-end;
+    }
+
+    .SignUp .mobile-logo svg{
+        height: 80px;
+    }
+
+    .SignUp .title{
+        justify-content: center;
+    }
+
+    .SignUp .script{
+        justify-content: center;
+    }
+
+    .SignUp .FullName{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .SignUp .OrganizationName{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .SignUp .EmailAddress{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .SignUp .MobileNumber{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .SignUp .button button{
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .SignUp .mobile-logo svg{
+        height: 70px;
+    }
+
+    .SignUp .title{
+        font-size: 4em;
+    }
+
+    .SignUp .script{
+        font-size: 1.3em;
+    }
+
+    .SignUp .login-text{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .SignUp .mobile-logo svg{
+        height: 60px;
+    }
+    .SignUp .title{
+        font-size: 3em;
+    }
+    .SignUp .script{
+        font-size: 0.9em;
+    }
+    .SignUp .button button{
+        font-size: 1.2em;
+    }
+    .SignUp .login-text{
+        font-size: 1.3em;
+    }
+}
+
+@media all and (max-width: 424px) {
+    .SignUp{
+        grid-template-rows: 80px 50px 50px 100px 100px 100px 100px 100px 100px 50px;
+    }
+    .SignUp .mobile-logo svg{
+        height: 35px;
+    }
+
+    .SignUp .title{
+        font-size: 1.8em;
+    }
+
+    .SignUp .script{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85em;
+    }
+    .SignUp .login-text{
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .SignUp .script{
+        font-size: 0.75em;
+    }
+}

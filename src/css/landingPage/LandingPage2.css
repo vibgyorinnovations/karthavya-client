@@ -1,0 +1,151 @@
+.page-2 {
+    grid-area: page-2;
+    display: grid;
+    grid-template-rows: 15% 55% 10% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "image" "view" "info";
+    overflow: hidden;
+}
+
+.page-2 .title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+
+.page-2 .image {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.6);
+    overflow: hidden;
+    z-index: -2;
+}
+
+.page-2 .image svg {
+    width: 253.33px;
+    z-index: 2;
+    transform: scale(1.5) translateX(10px) translateY(-10px);
+}
+
+.page-2 .view {
+    grid-area: view;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-2 .view button {
+    width: 250px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #353535;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.page-2 .view button:hover {
+    transform: scale(1.05);
+}
+
+
+.page-2 .info {
+    grid-area: info;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+    .page-2 .title {
+        font-size: 4.3em;
+    }
+    
+    .page-2 .info {
+        font-size: 1.4em;
+    }
+    
+    .page-2 .image {
+        transform: scale(1.4);
+    }
+    
+    .page-2 .view button:hover {
+        transform: none;
+    }
+    
+    .page-2 .image svg {
+        transform: scale(1.6) translateX(10px) translateY(-10px);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .page-2 .title {
+        font-size: 4em;
+    }
+    
+    .page-2 .info {
+        font-size: 1.1em;
+    }
+    .page-2 .image svg {
+        transform: scale(1.5) translateX(10px) translateY(-10px);
+    }
+}
+
+@media all and (max-width: 576px) {
+    .page-2 .title {
+        font-size: 3.5em;
+    }
+    
+    .page-2 .info {
+        font-size: 0.9em;
+    }
+    
+    .page-2 .image svg {
+        transform: scale(1.4) translateX(10px) translateY(-10px);
+    }
+}
+
+@media all and (max-width: 424px) {
+    .page-2 .title {
+        font-size: 3em;
+    }
+    
+    .page-2 .view button {
+        width: 180px;
+        font-size: 1em;
+    }
+    
+    .page-2 .info {
+        font-size: 0.8em;
+    }
+    
+    .page-2 .image svg {
+        transform: scale(1.2) translateX(10px) translateY(-10px);
+    }
+}
+
+@media all and (max-width: 320px) {
+    .page-2 .info {
+        font-size: 0.7em;
+    }
+    .page-2 .image svg {
+        transform: scale(1.1) translateX(10px) translateY(-10px);
+    }
+}

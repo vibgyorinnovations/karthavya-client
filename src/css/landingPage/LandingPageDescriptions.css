@@ -1,0 +1,377 @@
+.product-description {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "title image" "description image";
+}
+
+.product-description .title {
+    grid-area: title;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 1.9em;
+    font-weight: 700;
+    text-align: right;
+    text-decoration: underline #707070 solid;
+    padding-bottom: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-decoration-thickness: 1px;
+}
+
+.product-description .description {
+    grid-area: description;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: right;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.product-description .image {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+
+.product-description .image .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C3BDBD;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    overflow: hidden;
+}
+
+.description-1 .image .img svg{
+    transform: scale(1.3);
+}
+
+.description-2 .image .img svg{
+    transform: scale(1.1) translateX(0px) translateY(0px);
+}
+
+.description-3 .image .img svg{
+    transform: scale(1.8) translateX(-12px);
+}
+
+.description-4 .image .img svg{
+    transform: scale(1.3);
+}
+
+.description-5 .image .img svg{
+    transform: scale(1.7);
+}
+/* Inverted Description */
+
+.product-description-inverted {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "image title" "image description";
+}
+
+.product-description-inverted .title {
+    grid-area: title;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 1.9em;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: underline #707070 solid;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-decoration-thickness: 1px;
+}
+
+.product-description-inverted .description {
+    grid-area: description;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.product-description-inverted .image {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+    
+}
+
+.product-description-inverted .image .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background: #C3BDBD;
+    overflow: hidden;
+}
+
+.product-description-inverted .image .img svg {
+    height: 300px;
+    width: 300px;
+}
+
+@media all and (max-width: 1200px) {
+    .product-description .title {
+        font-size: 1.8em;
+        padding-right: 80px;
+    }
+    
+    .product-description .description {
+        font-size: 1.2em;
+        padding-right: 80px;
+    }
+    
+    .product-description .image {
+        padding-left: 80px;
+    }
+    
+    .product-description-inverted .title {
+        font-size: 1.8em;
+        padding-left: 80px;
+    }
+    
+    .product-description-inverted .description {
+        font-size: 1.2em;
+        padding-left: 80px;
+    }
+    
+    .product-description-inverted .image {
+        padding-right: 80px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .product-description .title {
+        padding-right: 50px;
+        font-size: 1.5em;
+        text-decoration: underline #707070 solid;
+        text-decoration-thickness: 1px;
+    }
+    
+    .product-description .description {
+        padding-right: 50px;
+        font-size: 1.1em;
+    }
+    
+    .product-description .image {
+        padding-left: 50px;
+    }
+    
+    .product-description .image .img {
+        height: 270px;
+        width: 270px;
+    }
+    
+    .product-description-inverted .title {
+        padding-left: 50px;
+        font-size: 1.5em;
+        text-decoration: underline #707070 solid;
+        text-decoration-thickness: 1px;
+    }
+    
+    .product-description-inverted .description {
+        padding-left: 50px;
+        font-size: 1.1em;
+    }
+    
+    .product-description-inverted .image {
+        padding-right: 50px;
+    }
+    
+    .product-description-inverted .image .img {
+        height: 270px;
+        width: 270px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .product-description {
+        grid-template-columns: 100%;
+        grid-template-rows: 65% 10% 25%;
+        grid-template-areas: "image" "title" "description";
+    }
+    .product-description .title {
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6em;
+        padding-bottom: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        text-decoration-thickness: 1px;
+    }
+    
+    .product-description .description {
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    
+    .product-description .image {
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .product-description .image .img {
+        height: 220px;
+        width: 220px;
+    }
+    
+    .product-description-inverted {
+        grid-template-columns: 100%;
+        grid-template-rows: 65% 10% 25%;
+        grid-template-areas: "image" "title" "description";
+    }
+    
+    .product-description-inverted .title {
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6em;
+        padding-bottom: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        text-decoration-thickness: 1px;
+    }
+    
+    .product-description-inverted .description {
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .product-description-inverted .image {
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .product-description-inverted .image .img {
+        height: 220px;
+        width: 220px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .product-description .title {
+        font-size: 1.4em;
+    }
+    
+    .product-description .description {
+        font-size: 1em;
+    }
+    
+    .product-description .image {
+        justify-content: center;
+    }
+    
+    .product-description .image .img {
+        height: 220px;
+        width: 220px;
+    }
+    
+    .product-description-inverted .title {
+        font-size: 1.4em;
+    }
+    
+    .product-description-inverted .description {
+        font-size: 1em;
+    }
+    
+    .product-description-inverted .image {
+    }
+    
+    .product-description-inverted .image .img {
+    }
+}
+
+@media all and (max-width: 424px) {
+    .product-description .title {
+        font-size: 1.2em;
+    }
+    
+    .product-description .description {
+        font-size: 0.9em;
+    }
+    
+    .product-description .image .img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .product-description-inverted .title {
+        font-size: 1.2em;
+    }
+    
+    .product-description-inverted .description {
+        font-size: 0.9em;
+    }
+    
+    .product-description-inverted .image .img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .product-description .title {
+        font-size: 1.1em;
+    }
+    
+    .product-description .description {
+        font-size: 0.8em;
+    }
+    
+    .product-description .image .img {
+        height: 180px;
+        width: 180px;
+    }
+    
+    .product-description-inverted .title {
+        font-size: 1.1em;
+    }
+    
+    .product-description-inverted .description {
+        font-size: 0.8em;
+    }
+    
+    .product-description-inverted .image .img {
+        height: 180px;
+        width: 180px;
+    }
+}

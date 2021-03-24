@@ -1,0 +1,30 @@
+.not-an-email-address.active {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #ff0000;
+    background: #ff7777;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.not-an-email-address.active .dismiss-alert {
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.not-an-email-address.inactive {
+    display: none;
+}

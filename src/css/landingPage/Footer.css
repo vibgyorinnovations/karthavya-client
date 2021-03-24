@@ -1,0 +1,384 @@
+.Footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 40% 15% 15% 15% 15%;
+    grid-template-columns: 100%;
+    grid-template-areas: "line-1" "email" "line-2" "buttons" "footer";
+    background: #0F0F0F;
+}
+
+.Footer .line-1 {
+    grid-area: line-1;
+    color: white;
+    font-size: 3.5em;
+    font-weight: 700;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.Footer .email {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.Footer .email input {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    color: #424141;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-top: none;
+    border-bottom: 2px solid #707070;
+    font-size: 3.25em;
+    font-weight: 600;
+}
+
+.Footer .email input::placeholder {
+    color: #424141;
+}
+
+.Footer .line-2 {
+    grid-area: line-2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #CAC4C4;
+    font-size: 1.5em;
+}
+
+.Footer .footer-buttons {
+    grid-area: buttons;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.Footer .footer-buttons .footer-sign-up {
+    height: 50px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.7em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.Footer .footer-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.Footer .footer-buttons .footer-login {
+    height: 50px;
+    width: 200px;
+    margin-left: 40px;
+    border: 2px solid white;
+    background: #0F0F0F;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.7em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.Footer .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copyrights pages";
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.Footer .footer .copyrights {
+    grid-area: copyrights;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 1.2em;
+}
+
+.Footer .footer .pages {
+    grid-area: pages;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Footer .footer .pages .page {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.Footer .footer .pages .page a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.Footer .footer .pages .page a:hover {
+    transform: scale(1.05);
+}
+
+.Footer .footer .pages .privacy-policy {
+    width: 130px;
+}
+
+.Footer .footer .pages .terms-and-conditions {
+    width: 210px;
+    border-left: 1px solid white;
+}
+
+.Footer .footer .pages .sales-policy {
+    width: 120px;
+    border-left: 1px solid white;
+}
+
+.Footer .footer .pages .legal {
+    width: 70px;
+    border-left: 1px solid white;
+}
+
+.Footer .footer .pages .site-map {
+    width: 100px;
+    border-left: 1px solid white;
+}
+
+@media all and (max-width: 1200px) {
+    .Footer .line-1 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .Footer .email {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .Footer .line-2 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .Footer .footer-buttons {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .Footer .line-1 {
+        font-size: 3em;
+    }
+    
+    .Footer .email input {
+        font-size: 2.75em;
+    }
+    
+    .Footer .line-2 {
+        font-size: 1.2em;
+    }
+    
+    .Footer .footer-buttons {
+    }
+    
+    .Footer .footer-buttons .footer-sign-up {
+        width: 150px;
+        font-size: 1.5em;
+    }
+    
+    .Footer .footer-buttons .footer-login {
+        width: 150px;
+        font-size: 1.5em;
+    }
+    
+    .Footer .footer-buttons button:hover {
+        transform: none;
+    }
+    
+    .Footer .footer .copyrights {
+        font-size: 1em;
+    }
+    
+    .Footer .footer .pages .page {
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .Footer .line-1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .Footer .email {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .Footer .email input {
+        font-size: 2.75em;
+    }
+    
+    .Footer .line-2 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .Footer .footer-buttons {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .Footer .footer-buttons .footer-sign-up {
+        width: 150px;
+        font-size: 1.5em;
+    }
+    
+    .Footer .footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .Footer .footer .pages .page {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .Footer .line-1 {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 2.7em;
+    }
+    
+    .Footer .email {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .Footer .email input {
+        font-size: 2.3em;
+    }
+    
+    .Footer .line-2 {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.1em;
+    }
+    
+    .Footer .footer-buttons {
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: center;
+    }
+    
+    .Footer .footer-buttons .footer-sign-up {
+        width: 150px;
+        font-size: 1.5em;
+    }
+    
+    .Footer .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "copyrights" "pages";
+    }
+    
+    .Footer .footer .copyrights {
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    
+    .Footer .footer .pages{
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 424px) {
+    .Footer .line-1 {
+        font-size: 2.4em;
+    }
+    
+    .Footer .email input {
+        font-size: 1.8em;
+    }
+    
+    .Footer .line-2 {
+        font-size: 1.1em;
+    }
+    
+    .Footer .footer-buttons .footer-sign-up {
+        width: 120px;
+        font-size: 1.2em;
+    }
+    
+    .Footer .footer-buttons .footer-login {
+        width: 120px;
+        font-size: 1.2em;
+    }
+    
+    .Footer .footer .copyrights {
+        font-size: 1.1em;
+    }
+    
+    .Footer .footer .pages .page {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .Footer .line-1 {
+        font-size: 1.6em;
+    }
+    
+    .Footer .email input {
+        font-size: 1.2em;
+    }
+    
+    .Footer .line-2 {
+        font-size: 0.9em;
+    }
+    
+    .Footer .footer-buttons .footer-sign-up {
+        height: 40px;
+        font-size: 1.1em;
+    }
+    
+    .Footer .footer-buttons .footer-login {
+        height: 40px;
+        font-size: 1.1em;
+    }
+    
+    .Footer .footer .copyrights {
+        font-size: 1em;
+    }
+    
+    .Footer .footer .pages .page {
+        font-size: 0.6em;
+    }
+}
