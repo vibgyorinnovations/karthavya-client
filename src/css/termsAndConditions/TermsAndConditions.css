@@ -1,0 +1,116 @@
+.TermsAndConditions {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "content";
+}
+
+.TermsAndConditions .title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.TermsAndConditions .content {
+    grid-area: content;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    font-size: 1.5em;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.TermsAndConditions .content a {
+    text-decoration: none;
+    color: #0000ee;
+}
+
+@media all and (max-width: 1200px) {
+    .TermsAndConditions .title {
+        font-size: 3.5em;
+    }
+    
+    .TermsAndConditions .content {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 1.3em;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .TermsAndConditions .title {
+        font-size: 3em;
+    }
+    
+    .TermsAndConditions .content {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 1.25em;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .TermsAndConditions {
+        grid-template-rows: 15% auto;
+    }
+    
+    .TermsAndConditions .title {
+        font-size: 2.75em;
+    }
+    
+    .TermsAndConditions .content {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 70px;
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .TermsAndConditions .title {
+        font-size: 2.1em;
+    }
+    
+    .TermsAndConditions .content {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        font-size: 1em;
+        line-height: 30px;
+    }
+}
+
+@media all and (max-width: 424px) {
+    .TermsAndConditions {
+        grid-template-rows: 10% auto;
+    }
+    
+    .TermsAndConditions .title {
+        font-size: 1.6em;
+    }
+    
+    .TermsAndConditions .content {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 30px;
+        font-size: 0.9em;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .TermsAndConditions .title {
+        font-size: 1.5em;
+    }
+    
+    .TermsAndConditions .content {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 0.8em;
+    }
+}

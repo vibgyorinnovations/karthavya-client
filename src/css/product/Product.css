@@ -1,0 +1,17 @@
+.buy{
+    background-color:crimson;
+    color:white;
+    font-size:20px;
+    font-weight:400px;
+    letter-spacing: 1px;
+    padding : 15px 60px;
+    border: none;
+    border-radius: 5px;
+}
+.description{
+    padding: 15px 32px;
+}
+.Logo{
+    width:400px;
+    height:100px;
+}

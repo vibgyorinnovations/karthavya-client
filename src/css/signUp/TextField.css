@@ -1,0 +1,89 @@
+.text-field {
+    height: 60px;
+    width: 100%;
+}
+
+.text-field input {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #a8abae;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.6em;
+    color: #a8abae;
+}
+
+.text-field text {
+    z-index: 2;
+    position: relative;
+    top: -70px;
+    margin-left: 10px;
+    background: white;
+    color: #a8abae;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+@media all and (max-width: 1200px) {
+    .text-field input {
+        font-size: 1.5em;
+    }
+
+    .text-field text {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .text-field input {
+    }
+
+    .text-field text {
+    }
+}
+
+@media all and (max-width: 768px) {
+    .text-field input {
+        font-size: 1.4em;
+    }
+
+    .text-field text {
+        font-size: 1.05em;
+        top: -69px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .text-field input {
+        font-size: 1.35em;
+    }
+
+    .text-field text {
+        font-size: 1.025em;
+    }
+}
+
+@media all and (max-width: 424px) {
+    .text-field input {
+        font-size: 1.2em;
+    }
+
+    .text-field text {
+        font-size: 0.9em;
+        top: -66px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .text-field input {
+        font-size: 1.1em;
+    }
+
+    .text-field text {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,167 @@
+.FAQ {
+    width: 100%;
+    min-height: 120px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 90% 10%;
+    grid-template-areas: "question drop" "answer answer";
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.FAQ.inactive {
+    min-height: 60px;
+}
+
+.FAQ.active {
+    min-height: 120px;
+}
+
+.FAQ .question {
+    grid-area: question;
+    font-size: 1.5em;
+    font-weight: 600;
+    min-height: 32px;
+    width: 100%;
+}
+
+.FAQ .drop {
+    grid-area: drop;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FAQ .drop svg {
+    height: 15px;
+    cursor: pointer;
+}
+
+.FAQ .answer.inactive {
+    display: none;
+}
+
+.FAQ .answer.active {
+    display: block;
+}
+
+.FAQ .answer {
+    grid-area: answer;
+    display: block;
+    min-height: 37px;
+    font-size: 1.3em;
+    font-weight: 500;
+    border-bottom: 2px solid #707070;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 1200px) {
+    .FAQ {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    
+    .FAQ .question {
+        font-size: 1.4em;
+    }
+    
+    .FAQ .answer {
+        font-size: 1.2em;
+    }
+    
+    .FAQ .drop svg {
+        height: 13px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .FAQ {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .FAQ .question {
+        font-size: 1.35em;
+    }
+    
+    .FAQ .answer {
+        font-size: 1.15em;
+    }
+    
+    .FAQ .drop svg {
+        height: 12.5px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .FAQ {
+        padding-bottom: 10px;
+    }
+    
+    .FAQ .question {
+        font-size: 1.3em;
+    }
+    
+    .FAQ .answer {
+        font-size: 1.1em;
+    }
+    
+    .FAQ .drop svg{
+        height: 12px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .FAQ {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .FAQ .question {
+        font-size: 1.25em;
+    }
+    
+    .FAQ .answer {
+        font-size: 1.05em;
+    }
+    
+    .FAQ .drop svg{
+        height: 11.5px;
+    }
+}
+
+@media all and (max-width: 424px) {
+    .FAQ {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .FAQ .question {
+        font-size: 1.1em;
+    }
+    
+    .FAQ .answer {
+        font-size: 0.9em;
+    }
+    .FAQ .drop svg{
+        height: 11px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .FAQ .question {
+        font-size: 1em;
+    }
+    
+    .FAQ .answer {
+        font-size: 0.8em;
+    }
+    .FAQ .drop svg{
+        height: 10px;
+    }
+}
