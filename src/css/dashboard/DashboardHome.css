@@ -78,16 +78,29 @@
 @media all and (max-width: 1200px) {
     .DashboardHome {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .DashboardHome.active{
         grid-template-rows: 100% 50% 50% 50%;
         grid-template-areas: "calendar calendar calendar" "badge-1 badge-2 badge-3" "badge-4 badge-5 badge-6" "badge-7 download .";
+    }
+    .DashboardHome.inactive{
+        grid-template-rows: 100% 50%;
+        grid-template-areas: "calendar calendar calendar" " overlay overlay overlay";
     }
 }
 
 @media all and (max-width: 992px) {
     .DashboardHome {
         grid-template-columns: 50% 50% ;
+    }
+
+    .DashboardHome.active{
         grid-template-rows: 100% 50% 50% 50% 50%;
         grid-template-areas: "calendar calendar" "badge-1 badge-2" "badge-3 badge-4" "badge-5 badge-6" "badge-7 download";
+    }
+    .DashboardHome.inactive{
+        grid-template-rows: 100% 50%;
+        grid-template-areas: "calendar calendar" "overlay overlay";
     }
 }
 
@@ -98,8 +111,15 @@
 @media all and (max-width: 576px) {
     .DashboardHome {
         grid-template-columns: 100% ;
+    }
+
+    .DashboardHome.active{
         grid-template-rows: 100% 50% 50% 50% 50% 50% 50% 50% 50%;
         grid-template-areas: "calendar" "badge-1" "badge-2" "badge-3" "badge-4" "badge-5" "badge-6" "badge-7" "download";
+    }
+    .DashboardHome.inactive{
+        grid-template-rows: 100% 50%;
+        grid-template-areas: "calendar" "overlay";
     }
 }
 

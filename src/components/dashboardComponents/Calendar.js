@@ -1,7 +1,10 @@
 import React from 'react'
 import '../../css/dashboard/Calendar.css'
+import MyDashboardContext from '../../context/dashboardContext/DashboardContext'
+import Axios from 'axios'
 
 class Calendar extends React.Component {
+    static contextType = MyDashboardContext
     months = {
         1: 'January',
         2: 'February',
@@ -54,6 +57,13 @@ class Calendar extends React.Component {
         this.dateSelected = this.dateSelected.bind(this)
         this.nextMonth = this.nextMonth.bind(this)
         this.prevMonth = this.prevMonth.bind(this)
+    }
+
+    // This function is used for padding zero to a number
+    pad (n, width) {
+        let z = '0'
+        n = n + ''
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n
     }
 
     // This function gets the dates of the month of the year given
@@ -122,6 +132,23 @@ class Calendar extends React.Component {
                 CURRENT_DATE: 'Select a valid date!!',
                 DATES: date
             })
+        }
+
+        if (this.state.SELECTED_DATE !== '' && this.state.MONTH !== '' && this.state.YEAR !== '') {
+            let date = this.pad(parseInt(this.state.SELECTED_DATE), 2).toString() + '-' + this.pad(parseInt(this.state.MONTH.trim()) + 1, 2).toString() + '-' + this.state.YEAR
+            let URL = 'http://localhost:5000/dashboard/' + date
+            Axios.get(URL)
+                .then(async response => {
+                    console.log(response.data.dashboardData)
+                    if (Object.keys(response.data.dashboardData).length !== 0) {
+                        await this.context.setDayData(response.data.dashboardData)
+                    } else {
+                        this.context.setDayData(null)
+                    }
+                })
+                .catch(response => {
+                    console.log(response)
+                })
         }
     }
 
